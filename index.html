@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Henry's Cakes Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" async></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- Creat slideshow-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade default">
+                <img src="Images/banner.jpg" alt="banner" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/banner2.jpg" alt="banner2" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/bamner3.jpg" alt="banner3" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- End slideshow-->
+    </div>
+    <div class="navbar" id="mynav">
+        <a href="index.html" class="active">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn"> Products </button>
+            <div class="subnav-content">
+                <a href="detail-1.html">Classic Yellow Cake </a>
+                <a href="detail-2.html">Coconut Bundt Cake </a>
+                <a href="detail-3.html">Cream Cheese Pound Cake </a>
+                <a href="#">German Chocolate Cake </a>
+            </div>
+        </div>
+        <a href="Contact.html">Contact</a>
+        <a href="Order.html">Order</a>
+        <a href="About.html">About</a>
+        <a href="#" class="icon" onclick="myNavbar()"> &#9776;</a>
+
+    </div>
+
+    <main>
+        <div class="section">
+            <p>05/Jan</p> <br>
+            <h2 id="1">Classic Yellow Cake with Chocolate Frosting</h2><br>
+            <img src="Images/Yellow.jpg" alt="Yellow"><br>
+            <p> This fluff vanilla cake recipe is the absolute best yellow cake from scratch and paired with the silky smooth chocolate frosting, you can't beat it for a classic birthday cake or any other celebration!
+            </p>
+
+            <a class="link" href="detail-1.html">Read more</a><br><br>
+
+        </div>
+        <div class="section">
+            <p>01/Feb</p><br>
+            <h2 id="2">Coconut Bundt Cake with White Chocolate-Coconut Glaze</h2><br>
+            <img class="img" src="Images/Coconut.jpg" alt="Coconut"><br>
+            <p> Last week flew by and before I knew it, it was time to plan the menu for Sunday dinner. Sundays have been a perfect opportunity for me to experiment with new dessert recipes, especially those that serve tons of people, since we have help polishing.</p>
+            <a class="link" href="#">Read more</a><br><br>
+
+        </div>
+        <div class="section">
+            <p>12/Feb</p><br>
+            <h2 id="3"> Cream Cheese Pound Cake</h2><br>
+            <img class="img" src="Images/Cream.jpg" alt="Cream"><br>
+            <p> If you are looking for the perfect cream cheese pound cake recipe that turns out buttery, moist, and dense each and even* time, add this year-round crowd-pleaser to your list! Using only 7 simple ingredients, this easy cream cheese pound cake
+                will quickly become your favorite; sen'e plain with a sprinkle of powdered sugar or offer homemade whipped cream and berries, or a drizzle of salted caramel or fudge sauce.
+            </p>
+            <a class="link" href="#">Read more</a><br><br>
+        </div>
+        <div class="section">
+            <p>25/Feb</p><br>
+            <h2 id="4"> German Chocolate CakeCream</h2><br>
+            <p><img class="img" src="Images/German.jpg" alt="German"></p><br>
+            <p> I have long associated German Chocolate Cake with Father's Day, although I'm not entirely sure why. I think I remember my mom making it for my dad once or twice growing up (although never on Father's Day, ironically) and the correlation must
+                have stuck somewhere along the way.
+            </p>
+            <a class="link" href="#">Read more</a><br><br>
+        </div>
+    </main>
+    <hr>
+    <div class="footer">
+        <footer> &#169; 2003 by Henry's Cake</footer>
+    </div>
+</body>
+
+</html>

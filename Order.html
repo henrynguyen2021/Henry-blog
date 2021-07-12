@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>About Henry Cake</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" async></script>
+</head>
+
+<body>
+    <div class="header">
+        <!-- Creat slideshow-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade default">
+                <img src="Images/banner.jpg" alt="banner" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/banner2.jpg" alt="banner2" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/bamner3.jpg" alt="banner3" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!-- End slideshow-->
+    <div class="navbar" id="mynav">
+        <a href="index.html" class="active">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn"> Products </button>
+            <div class="subnav-content">
+                <a href="detail-1.html">Classic Yellow Cake </a>
+                <a href="detail-2.html">Coconut Bundt Cake </a>
+                <a href="detail-3.html">Cream Cheese Pound Cake </a>
+                <a href="#">German Chocolate Cake </a>
+            </div>
+        </div>
+        <a href="Contact.html">Contact</a>
+        <a href="Order.html">Order</a>
+        <a href="About.html">About</a>
+        <a href="#" class="icon" onclick="myNavbar()"> &#9776;</a>
+
+    </div>
+    <div>
+        <h2> Order Now</h2>
+        <hr>
+    </div>
+    <div class="form">
+        <form name="form1">
+
+            <div class="row">
+                <div class=" col-s-12 col-2">
+                    <label>Cake Name</label> <br>
+                </div>
+                <div class=" col-s-12 col-10">
+
+                    <select id="cake">
+                        <option value="select" selected>---Select Cake ---</option>
+                        <option value="Classic Yellow Cake">Classic Yellow Cake </option>
+                        <option value="Coconut Bundt Cake">Coconut Bundt Cake </option>
+                        <option value="Cream Cheese Pound Cake">Cream Cheese Pound Cake</option>
+                        <option value="German Chocolate Cake">German Chocolate Cake</option>
+                    </select> <br>
+                    <span id="error-select"></span>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-s-12 col-2">
+                    <label>Your name</label> <br>
+                </div>
+                <div class="col-s-12 col-10">
+
+                    <input id="name" type="text" placeholder=" enter your name"> <br>
+                    <span id="error-name"></span>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-12 col-2">
+                    <label>Message</label><br>
+                </div>
+                <div class="col-s-12 col-10">
+                    <input id="message" type="text" placeholder=" type your text that write in the cake"> <br>
+                    <span id="error-message"></span>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-12 col-2">
+                    <label> Includes</label> <br>
+                </div>
+                <div class="col-s-12 col-10">
+                    <input type="checkbox" value="Candle ">
+                    <label>Candle </label> <br>
+                    <input type="checkbox" value="Firework ">
+                    <label> Firework</label><br>
+                    <input type="checkbox" value="Toys ">
+                    <label> Toys</label><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-12 col-2">
+                    <label>Delivery Date</label>
+                </div>
+                <div class="col-s-12 col-10">
+                    <input id="date" type="date"> <br>
+                    <span id="error-date"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-12 col-2">
+                    <label>Delivery to</label>
+                </div>
+                <div class="col-s-12 col-10">
+                    <textarea id="address"></textarea> <br>
+                    <span id="error-address"></span>
+                    <span id="error-address-text"></span>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-s-12 col-2">
+                    <label> Call before delivery </label> <br>
+                </div>
+                <div class="col-s-12 col-10">
+                    <input type="radio" name="radio" value="yes">
+                    <label>Yes </label>
+                    <input type="radio" name="radio" value="no" checked>
+                    <label>No</label><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-s-12 col-2">
+                </div>
+                <div class="col-s-12 col-10">
+                    <button id="submit" onclick="validateOrder();return false;" value="Order now">Order now</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <hr>
+    <div class="footer">
+        <footer> &#169; 2003 by Henry Cake</footer>
+    </div>
+</body>
+
+
+</html>

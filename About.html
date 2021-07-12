@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>About Henry's Cake</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" async></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- Creat slideshow-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade default">
+                <img src="Images/banner.jpg" alt="banner" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/banner2.jpg" alt="banner2" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/bamner3.jpg" alt="banner3" style="width:100%">
+                <div class="text">Heny's Cakes</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- End slideshow-->
+
+        <div class="navbar" id="mynav">
+            <a href="index.html" class="active">Home</a>
+            <div class="subnav">
+                <button class="subnavbtn"> Products </button>
+                <div class="subnav-content">
+                    <a href="detail-1.html">Classic Yellow Cake </a>
+                    <a href="detail-2.html">Coconut Bundt Cake </a>
+                    <a href="detail-3.html">Cream Cheese Pound Cake </a>
+                    <a href="#">German Chocolate Cake </a>
+                </div>
+            </div>
+            <a href="Contact.html">Contact</a>
+            <a href="Order.html">Order</a>
+            <a href="About.html">About</a>
+            <a href="#" class="icon" onclick="myNavbar()"> &#9776;</a>
+
+        </div>
+
+        <div class="main">
+            <h2> About Henry's Cake</h2>
+            <hr>
+            <div class="section">
+                <img class="img" src="Images/Yellow.jpg" alt="Yellow"><br>
+                <p> Hello and welcome! I'm Henry and I believe anyone can learn to confidently make recipes worthy of celebration. </p><br>
+                <p>"I made your pavlova recipe today and it was delicious! As usual, your recipe was easy to follow. There’s four of us here and there's only one third left. It'll be gone soon. Thanks for another great recipe!” </p><br>
+                <p>We tried your weeknight bolognese recipe yesterday! Ohmygosh, it was so good. My husband is still talking about it this morning. </p><br>
+                <p>Just wanted to tell you I made your beef stew recipe this weekend. Just incredible !! The oven method was perfect and truly brought out the flavors.</p><br>
+                <p>I just wanted to send you a quick email to tell you that I really love vour recipes. I have always loved to cook, but I haven't been much of a baker. I have been baking more and more and I find that your recipes are always the best</p>
+                <br>
+                <p>Imagine your friends and coworkers gobblmg up those special treats that you made for them. Imagine that the dish you made for Thanksgiving or those cookies for Christmas are all that anyone is talking about and EVERYONE has asked you for
+                    the recipe.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <footer> &#169; 2003 by Henry's Cake</footer>
+        </div>
+</body>
+
+</html>
